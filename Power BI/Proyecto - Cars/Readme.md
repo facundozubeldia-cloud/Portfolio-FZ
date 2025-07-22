@@ -75,7 +75,80 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ---
 
+## 🧮 Transformaciones en Power Query
+
+### 🚗 Tabla: Autos
+
+- Se importó la hoja "Autos" desde un archivo Excel.
+- Se promovieron encabezados y se ajustaron tipos de datos (`CarID`, `Company_ID`, `EngineID`, `FuelTypeID`, etc.).
+- Se eliminó la columna `"BatteryCapacity in CC"` por falta de relevancia.
+- Se renombraron columnas para mejorar legibilidad (`CarName` → `Modelo`, `CarID` → `Car_ID`, `FuelTypeID` → `FuelType_ID`, `EngineID` → `Engine_ID`).
+- Se convirtieron varios campos a texto para facilitar relaciones (`Car_ID`, `Company_ID`, `Engine_ID`).
+- Se agregó la columna `"Puertas"` en base a la cantidad de asientos.
+- Se creó la columna `"Gama de vehículo"` según el precio del auto, clasificando en: Económico, Accesible, Estándar, Premium, Lujo y Superlujo.
+- Se renombró `"Personalizado"` como `"Clasificación de Precio#"` y se ajustaron tipos de datos ordenando la columna categorica por la numerica.
+
+---
+
+### ⛽ Tabla: FuelTypes
+
+- Se importó la hoja "FuelTypes" desde Excel.
+- Se promovieron encabezados y se ajustaron tipos de datos.
+- Se renombraron columnas (`FuelTypeID` → `FuelType_ID`, `FuelType` → `Combustible`).
+- Se reemplazaron valores para mejorar la categorización:
+  - `"Hybrid"` → `"Ecológicos"`
+  - `"Gasoline"` → `"Nafta"`
+- Se filtraron los tipos de combustible relevantes (`FuelType_ID` = 1, 2, 3).
+
+---
+
+### 🛠️ Tabla: Engines
+
+- Se importó la hoja "Engines" desde Excel.
+- Se promovieron encabezados y se ajustaron tipos de datos.
+- Se renombraron columnas (`EngineID` → `Engine_ID`, `Engine` → `Motor`).
+
+---
+
+### 🏢 Tabla: Companies
+
+- Se importó la hoja "Companies" desde Excel.
+- Se promovieron encabezados y se ajustaron tipos de datos.
+- Se renombraron columnas (`Companies` → `Compañía`, `ID_Pais` → `Pais_ID`).
+
+---
+
+### 🌍 Tabla: País
+
+- Se reemplazaron valores en la columna `"Origen Geográfico"` para estandarizar:
+  - `"Asis"` → `"Asiáticos"`
+  - `"Europa"` → `"Europeos"`
+  - `"America"` → `"Americanos"`
+- Se renombraron columnas para mayor claridad:
+  - `"Origen Geográfico"` → `"Procedencia de la Compañía"`
+  - `"Pais Origen"` → `"Origen Compañía"`
+
+---
+
+### 👥 Tabla: Clientes (segmentación por perfil)
+
+Se creó una tabla personalizada que clasifica a los usuarios según el tipo de auto que eligen:
+
+| Usuario               | Criterios de Segmentación                                                                 |
+|-----------------------|-------------------------------------------------------------------------------------------|
+| 🟢 EcoFriendly         | Autos con `FuelType_ID = 3` (Ecológicos)                                                 |
+| 🏁 Corredor            | `HorsePower ≥ 200` y `Aceleración 0-100 ≤ 5 seg`                                         |
+| 👨‍👩‍👧 Familiar          | `Asientos ≥ 5`, `Puertas ≥ 4`, `Precio ≤ 70,000 USD`                                     |
+| 🧍 Soltero             | `HorsePower ≥ 80`, `Puertas ≤ 3`, `Precio ≤ 149,999 USD`                                 |
+| 💎 Compradores de Lujo | `Clasificación de Precio = Lujo` o `Superlujo`                                           |
+
+---
+
+
+
 ## 📊 Análisis por tipo de cliente
+
+![Dashboard](image.png)
 
 ### 1. ¿Cuáles, cuántos y con qué precio mediano son los modelos más adecuados por perfil?  
 - Segmentos ordenados por volumen:  
@@ -111,6 +184,8 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ## 💼 Análisis por precio y compañía
 
+![Dashboard 2](image-1.png)
+
 ### 1. ¿Qué compañía es la más popular (mayor número de modelos)?  
 - **Nissan:** 154 modelos (USD 60 337)  
 - Volkswagen: 103 (USD 36 882)  
@@ -128,6 +203,8 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ## 💸 Distribución por categoría de precio y origen
 
+![Dashboard 3](image-2.png)
+
 ### 1. ¿Dónde se concentran los modelos según precio y región?  
 - Económico/Accesible/Estándar → Asia (Corea, India, Japón)  
 - Premium/Lujo/Superlujo → Europa  
@@ -142,6 +219,8 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 ---
 
 ## ⚡ Análisis de rendimiento
+
+![Dashboard 4](image-3.png)
 
 ### 1. Relación precio/(HP + Torque)  
 - Eléctricos “mainstream” (Hummer EV) → mejor eficiencia  

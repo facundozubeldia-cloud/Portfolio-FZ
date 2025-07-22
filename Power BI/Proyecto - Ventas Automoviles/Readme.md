@@ -33,7 +33,3 @@ Este proyecto analiza las ventas de una cadena de retail entre 2021 y 2023. Se c
 - `ventas.pbix`: archivo de Power BI.
 - `datos/`: carpeta con los CSV originales.
 - `README.md`: documentación del proyecto.
-
-## 📬 Contacto
-
-[Tu LinkedIn] | [Tu email]
