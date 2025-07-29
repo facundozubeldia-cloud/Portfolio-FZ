@@ -12,7 +12,6 @@ print("Inicio del programa.")
 print("Después de la pausa.")
 print ("""
 Se acaba de correr una carrera de F1 de 52 vueltas. Sabemos que corrieron a lo sumo 20 pilotos.
-
 Los datos estan cargados en un diccionario en donde el nombre del piloto es la clave a la que se le asocian tres valores
 enteros que representan la duración de la carrera, la de la vuelta mas rapida y la cantidad de vueltas que realizó,
 respectivamente.
@@ -25,8 +24,6 @@ Ejemplo:
 Significa que Hamilton completé la carrera en 6115 segundos, su vuelta mas rapida fue de 113 segundos y finaliz6 la
 carrera ya que hizo las 52 vueltas. Vettel tuvo su vuelta mas rapida en 112 segundos pero no finalizé la carrera, ya que
 completé solo 40 vueltas
-
-Se pide, hacer un programa en Python que:
 
     'Se proporsionan los datos en un diccionario con listas como valores.'
     'tranformalo en un dicionario con otro diccionario anidado' en base a la aux
@@ -43,25 +40,25 @@ cada_clave='Hamilton'
 
 0) Estructura de datos:
 1) Manupulacion de datos:
-    A)Genera dos listas de los pilotos que abandonaro y los que no.
+    A)Hay dos listas de los pilotos que abandonaro y los que no.
 
     B) Quien gano, con que tiempos de vuelta y totales
 
-    C) Genera el dicionario del podio
+    C) Generación del dicionario del podio
     podio= {
             "primero":{"Apellido":"","tiempo_Total en pista":0, "vuelta Mas Rapida":0},
             "segundo":{"Apellido":"","tiempo_Total en pista":0, "vuelta Mas Rapida":0},
             "tercero":{"Apellido":"","tiempo_Total en pista":0, "vuelta Mas Rapida":0}
             }
 
-    D) Genera el dicionario de os 3 pilotos mas rápidos
+    D) Generacipon del dicionario de los 3 pilotos mas rápidos
     piloto_mas_rapido= {
                         "Apellido1":puntos1,
                         "Apellido2":puntos2,
                         "Apellido3":puntos3,
                         }
 
-    E) Genera el diccionario de puntage obtenido por cada piloto: puntaje.
+    E) Generación del diccionario de puntage obtenido por cada piloto: puntaje.
     Para simplificar, solo reciben puntos los pilotos que hayan finalizado la carrera,
     salvo que sea el piloto que hizo la vuelta mas rapida quien recibirá un punto extra haya o no finalizado la carrera.
     datos:
@@ -72,7 +69,7 @@ cada_clave='Hamilton'
     F) Puntos por escuderia
     G) Podio escuderia
 3)  Menu con opciones y colores
-4)  Guardan dic_general en Excel y BBDD 
+4)  Guardado dic_general en Excel y BBDD 
 """)
 
 
@@ -522,7 +519,7 @@ print("*" * 100)
 
 ########################################################################
 # Guardar el diccionario de puntos por escudería en formato JSON
-
+import os
 import json
 try:
     import pandas as pd
@@ -540,15 +537,19 @@ except ImportError:
     from sqlalchemy import create_engine# librerias de bbdd---->sqlite
 
 
-with open('podio_escuderias.json', 'w') as json_file:
+# Guardar JSON
+json_path = os.path.join('C:/Users/zubel/OneDrive/Documentos/GitHub/fz-dataworks/Python/Proyecto Escuderias', 'podio_escuderias.json')
+with open(json_path, 'w') as json_file:
     json.dump(dic_escuderia, json_file)
 
 # Guardar el diccionario en formato Excel (XLSX)
 df_escuderia = pd.DataFrame(list(dic_escuderia.items()), columns=['Escudería', 'Puntos Totales'])
-df_escuderia.to_excel('podio_escuderias.xlsx', index=False)
+excel_path = os.path.join('C:/Users/zubel/OneDrive/Documentos/GitHub/fz-dataworks/Python/Proyecto Escuderias', 'podio_escuderias.xlsx')
+df_escuderia.to_excel(excel_path, index=False)
 
 # Guardar el diccionario en una base de datos SQLite
 engine = create_engine('sqlite:///podio_escuderias.db')
+db_path = os.path.join('C:/Users/zubel/OneDrive/Documentos/GitHub/fz-dataworks/Python/Proyecto Escuderias', 'podio_escuderias.db')
 df_escuderia.to_sql('escuderias', con=engine, if_exists='replace', index=False)
 
 # Confirmación de los archivos guardados
