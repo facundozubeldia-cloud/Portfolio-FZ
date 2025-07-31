@@ -56,6 +56,24 @@ Este repositorio recopila proyectos aplicados en análisis de datos, visualizaci
   * Identificación de la región norte como más rentable.
 
 ---
+## **Proyectos en Python**
+
+---
+
+## 🏎️ **Proyecto Escuderías – Análisis de Carrera de Fórmula 1**
+
+**Objetivo:**  
+Procesar datos de una carrera de F1 de 52 vueltas para un máximo de 20 pilotos, generando clasificaciones, asignando puntos y reportes de rendimiento por piloto y escudería.
+
+* **Tecnologías:** Python 3.7+, Pandas, SQLAlchemy, openpyxl, SQLite  
+* **Logros:**
+  * Estructuración de datos en diccionarios anidados con métricas clave (tiempo total en pista, vuelta más rápida, total de vueltas).  
+  * Identificación de finalistas, ganador, podio (top 3) y autor de la vuelta más rápida.  
+  * Asignación de puntos (25‑18‑15‑…‑1) a los 10 primeros finalistas y punto extra por la vuelta más rápida.  
+  * Cálculo de ranking y estadísticas por escudería, con extracción del top 3 de equipos.  
+  * Exportación automática de resultados a JSON, Excel y base de datos SQLite.  
+
+---  
 
 ## 🧠 **Proyectos de Machine Learning**
 

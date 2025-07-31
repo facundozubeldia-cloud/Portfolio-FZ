@@ -548,8 +548,11 @@ excel_path = os.path.join('C:/Users/zubel/OneDrive/Documentos/GitHub/fz-datawork
 df_escuderia.to_excel(excel_path, index=False)
 
 # Guardar el diccionario en una base de datos SQLite
-engine = create_engine('sqlite:///podio_escuderias.db')
+# Crear el path absoluto
 db_path = os.path.join('C:/Users/zubel/OneDrive/Documentos/GitHub/fz-dataworks/Python/Proyecto Escuderias', 'podio_escuderias.db')
+# Crear el engine con el path correcto
+engine = create_engine(f'sqlite:///{db_path}')
+# Guardar el DataFrame en la tabla 'escuderias'
 df_escuderia.to_sql('escuderias', con=engine, if_exists='replace', index=False)
 
 # Confirmación de los archivos guardados
