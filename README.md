@@ -15,7 +15,7 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 ---
 
 ## 🚗 **Rendimiento y Economía: Modelos Automotores**
-[📄 Ver documentación del proyecto Cars](Power BI/Proyecto - Cars/Readme.md)
+[📄 Ver documentación del proyecto Cars](Power BI/Proyecto - Cars/README.md)
 
 **Objetivo:** Análisis del mercado automotor para identificar patrones según perfil de cliente y gama de precios, facilitando decisiones estratégicas de negocio.
 
@@ -30,7 +30,7 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 ---
 
 ## 🚲 **Análisis del Sistema EcoBici**
-[📄 Ver documentación del proyecto Ecobici](Power BI/Proyecto - EcoBici/Readme.md)
+[📄 Ver documentación del proyecto Ecobici](Power BI/Proyecto - EcoBici/README.md)
 
 **Objetivo:** Evaluar eficiencia, patrones de uso y optimización de recursos del sistema público de bicicletas en Buenos Aires.
 
@@ -44,7 +44,7 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 ---
 
 ## 📘 **Dashboard Estratégico de Capital Humano**
-[📄 Ver documentación del proyecto de Capital Humano](Power BI/Proyecto - RRHH/Readme.md)
+[📄 Ver documentación del proyecto de Capital Humano](Power BI/Proyecto - RRHH/README.md)
 
 **Objetivo:** Proporcionar una visión integral del ciclo de vida del empleado, identificando riesgos y oportunidades en la gestión del talento.
 
@@ -58,7 +58,7 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 ---
 
 ## 📊 **Análisis de Ventas - Retail**
-[📄 Ver documentación del proyecto de Ventas - Retail](Power BI/Proyecto - Ventas Automoiles/Readme.md)
+[📄 Ver documentación del proyecto de Ventas - Retail](Power BI/Proyecto - Ventas Automoiles/README.md)
 
 **Objetivo:** Evaluar desempeño de ventas mediante KPIs clave, segmentación regional y análisis temporal.
 
@@ -73,7 +73,7 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 ## **Proyectos en Python**
 
 ### 🏎️ **Proyecto Escuderías – Análisis de Carrera de Fórmula 1**
-[📄 Ver documentación del proyecto Escuderias](Python/Proyecto Escuderias/Readme.md)
+[📄 Ver documentación del proyecto Escuderias](Python/Proyecto Escuderias/README.md)
 
 **Objetivo:**  
 Procesar datos de una carrera de F1 de 52 vueltas para un máximo de 20 pilotos, generando clasificaciones, asignando puntos y reportes de rendimiento por piloto y escudería.
@@ -91,28 +91,28 @@ Procesar datos de una carrera de F1 de 52 vueltas para un máximo de 20 pilotos,
 ## 🧠 **Proyectos de Machine Learning**
 
 ### 🌸 **Clasificación de Iris con Decision Tree**
-[📄 Ver documentación de Aprendizaje Supervisado](Python/Aprendizaje Supervisado/Readme.md)
+[📄 Ver documentación de Aprendizaje Supervisado](Python/Aprendizaje Supervisado/README.md)
 
 * Modelo explicativo visual para clasificar especies según características florales.
 
 ### 🔍 **Detección de Sarcasmo en Titulares**
-[📄 Ver documentación de Aprendizaje Supervisado](Python/Procesamiento Lenguaje Natuaral/Readme.md)
+[📄 Ver documentación de Aprendizaje Supervisado](Python/Procesamiento Lenguaje Natuaral/README.md)
 
 * NLP pipeline para clasificar titulares usando Random Forest.
 
 ### 🌐 **Reducción Dimensionalidad (PCA)**
-[📄 Ver documentación de Aprendizaje Supervisado](Python/Procesamiento Lenguaje Natuaral/Readme.md)
+[📄 Ver documentación de Aprendizaje Supervisado](Python/Procesamiento Lenguaje Natuaral/README.md)
 
 * Aplicación de PCA en dataset Iris para optimización del análisis exploratorio.
 
 ### 📷 **Clasificación de Imágenes (CIFAR-10)**
-[📄 Ver documentación de Aprendizaje Supervisado](Python/Redes Neuronales/Readme.md)
+[📄 Ver documentación de Aprendizaje Supervisado](Python/Redes Neuronales/README.md)
 
 * Comparativa entre red neuronal densa y CNN.
 * CNN alcanzó 76.6% accuracy con análisis detallado mediante matriz de confusión.
 
 ### 🤖 **Clustering: K-Means y DBSCAN**
-[📄 Ver documentación de Aprendizaje No Supervisado](Python/Aprendizaje No Supervisado/Readme.md)
+[📄 Ver documentación de Aprendizaje No Supervisado](Python/Aprendizaje No Supervisado/README.md)
 
 * Comparación de algoritmos, evaluación visual y numérica para segmentación óptima.
 
