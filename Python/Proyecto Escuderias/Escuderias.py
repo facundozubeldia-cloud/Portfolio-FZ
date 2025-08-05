@@ -538,18 +538,18 @@ except ImportError:
 
 
 # Guardar JSON
-json_path = os.path.join('C:/Users/zubel/OneDrive/Documentos/GitHub/fz-dataworks/Python/Proyecto Escuderias', 'podio_escuderias.json')
+json_path = os.path.join('C:/GitHub/fz-dataworks/Python/Proyecto Escuderias', 'podio_escuderias.json')
 with open(json_path, 'w') as json_file:
     json.dump(dic_escuderia, json_file)
 
 # Guardar el diccionario en formato Excel (XLSX)
 df_escuderia = pd.DataFrame(list(dic_escuderia.items()), columns=['Escudería', 'Puntos Totales'])
-excel_path = os.path.join('C:/Users/zubel/OneDrive/Documentos/GitHub/fz-dataworks/Python/Proyecto Escuderias', 'podio_escuderias.xlsx')
+excel_path = os.path.join('C:/GitHub/fz-dataworks/Python/Proyecto Escuderias', 'podio_escuderias.xlsx')
 df_escuderia.to_excel(excel_path, index=False)
 
 # Guardar el diccionario en una base de datos SQLite
 # Crear el path absoluto
-db_path = os.path.join('C:/Users/zubel/OneDrive/Documentos/GitHub/fz-dataworks/Python/Proyecto Escuderias', 'podio_escuderias.db')
+db_path = os.path.join('C:/GitHub/fz-dataworks/Python/Proyecto Escuderias', 'podio_escuderias.db')
 # Crear el engine con el path correcto
 engine = create_engine(f'sqlite:///{db_path}')
 # Guardar el DataFrame en la tabla 'escuderias'
