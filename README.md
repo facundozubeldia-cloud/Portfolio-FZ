@@ -15,7 +15,7 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 ---
 
 ## 🚗 **Rendimiento y Economía: Modelos Automotores**
-[📄 Ver documentación del proyecto Cars](Power BI\Proyecto - Cars\README.md)
+[📄 Ver documentación del proyecto Cars](Power BI\Proyecto - Cars\)
 
 **Objetivo:** Análisis del mercado automotor para identificar patrones según perfil de cliente y gama de precios, facilitando decisiones estratégicas de negocio.
 
