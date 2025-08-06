@@ -28,18 +28,30 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 
 ---
 
-## 🏎️ **Proyecto Escuderías – Análisis de Carrera de Fórmula 1**
+## 🏎️ Escuderias - Análisis de Formula 1
 
-**Objetivo:**  
-Procesar datos de una carrera de F1 de 52 vueltas para un máximo de 20 pilotos, generando clasificaciones, asignando puntos y reportes de rendimiento por piloto y escudería.
+Este script en Python analiza los resultados de una carrera de Fórmula 1 de 52 vueltas con hasta 20 pilotos. Estructura los datos en un diccionario anidado, calcula posiciones y puntos, genera estadísticas descriptivas y exporta informes en distintos formatos.
 
-* **Tecnologías:** Python 3.7+, Pandas, SQLAlchemy, openpyxl, SQLite  
-* **Logros:**
-  * Estructuración de datos en diccionarios anidados con métricas clave (tiempo total en pista, vuelta más rápida, total de vueltas).  
-  * Identificación de finalistas, ganador, podio (top 3) y autor de la vuelta más rápida.  
-  * Asignación de puntos (25‑18‑15‑…‑1) a los 10 primeros finalistas y punto extra por la vuelta más rápida.  
-  * Cálculo de ranking y estadísticas por escudería, con extracción del top 3 de equipos.  
-  * Exportación automática de resultados a JSON, Excel y base de datos SQLite. 
+#### ⚙️ Funcionalidades destacadas
+
+- Transformación de datos en estructuras claras y jerárquicas.
+- Identificación de finalistas, ganador y podio.
+- Asignación de puntos reglamentarios y extra por vuelta rápida.
+- Estadísticas de tiempos (media, mediana, desviación, etc.).
+- Ranking de escuderías por puntos.
+- Exportación en JSON, Excel y SQLite.
+
+#### 🧾 Ejemplo de resultados
+
+- 🥇 **Ganador**: Max Verstappen – 5200 s (vuelta rápida: 85 s)  
+- 🏆 **Podio**: Verstappen, Norris, Piastri  
+- 🔥 **Top escuderías**: McLaren (33 ptos), Red Bull (27), Ferrari (20)  
+- 📊 **Estadísticas (finishers)**:  
+  - Media: 5652 s  
+  - Mediana: 5616 s  
+  - Mínimo: 5200 s  
+  - Máximo: 6084 s  
+  - Desviación estándar: 280.68 s
 
 ---
 
