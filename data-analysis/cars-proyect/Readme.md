@@ -71,7 +71,7 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ## 🗺️ Diagrama del modelo de datos
 
-[Diagrama](./Diagrama.jpg)
+![Diagrama](./Diagrama.jpg)
 
 ---
 

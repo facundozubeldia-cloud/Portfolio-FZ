@@ -17,6 +17,10 @@ En este repositorio encontrarás:
 - **Análisis de resultados** y **recomendaciones**  
 
 ---
+
+## Dashboard
+
+![classicmodels](classicmodels.png)
  
 ## Resumen de KPIs Clave
 
