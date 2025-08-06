@@ -15,7 +15,6 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 ---
 
 ## 🚗 **Rendimiento y Economía: Modelos Automotores**
-[📄 Ver documentación del proyecto Cars](Power BI\Proyecto - Cars\)
 
 **Objetivo:** Análisis del mercado automotor para identificar patrones según perfil de cliente y gama de precios, facilitando decisiones estratégicas de negocio.
 
@@ -29,8 +28,22 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 
 ---
 
+## 🏎️ **Proyecto Escuderías – Análisis de Carrera de Fórmula 1**
+
+**Objetivo:**  
+Procesar datos de una carrera de F1 de 52 vueltas para un máximo de 20 pilotos, generando clasificaciones, asignando puntos y reportes de rendimiento por piloto y escudería.
+
+* **Tecnologías:** Python 3.7+, Pandas, SQLAlchemy, openpyxl, SQLite  
+* **Logros:**
+  * Estructuración de datos en diccionarios anidados con métricas clave (tiempo total en pista, vuelta más rápida, total de vueltas).  
+  * Identificación de finalistas, ganador, podio (top 3) y autor de la vuelta más rápida.  
+  * Asignación de puntos (25‑18‑15‑…‑1) a los 10 primeros finalistas y punto extra por la vuelta más rápida.  
+  * Cálculo de ranking y estadísticas por escudería, con extracción del top 3 de equipos.  
+  * Exportación automática de resultados a JSON, Excel y base de datos SQLite. 
+
+---
+
 ## 🚲 **Análisis del Sistema EcoBici**
-[📄 Ver documentación del proyecto Ecobici](Power BI\Proyecto - EcoBici\README.md)
 
 **Objetivo:** Evaluar eficiencia, patrones de uso y optimización de recursos del sistema público de bicicletas en Buenos Aires.
 
@@ -44,7 +57,6 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 ---
 
 ## 📘 **Dashboard Estratégico de Capital Humano**
-[📄 Ver documentación del proyecto de Capital Humano](Power BI\Proyecto - RRHH\README.md)
 
 **Objetivo:** Proporcionar una visión integral del ciclo de vida del empleado, identificando riesgos y oportunidades en la gestión del talento.
 
@@ -58,7 +70,6 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 ---
 
 ## 📊 **Análisis de Ventas - Retail**
-[📄 Ver documentación del proyecto de Ventas - Retail](Power BI\Proyecto - Ventas Automoviles\README.md)
 
 **Objetivo:** Evaluar desempeño de ventas mediante KPIs clave, segmentación regional y análisis temporal.
 
@@ -69,55 +80,35 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
   * Aplicación de la ley de Pareto para focalizar en productos clave.
   * Identificación de la región norte como más rentable.
 
----
-## **Proyectos en Python**
-
-### 🏎️ **Proyecto Escuderías – Análisis de Carrera de Fórmula 1**
-[📄 Ver documentación del proyecto Escuderias](Python\Proyecto Escuderias\README.md)
-
-**Objetivo:**  
-Procesar datos de una carrera de F1 de 52 vueltas para un máximo de 20 pilotos, generando clasificaciones, asignando puntos y reportes de rendimiento por piloto y escudería.
-
-* **Tecnologías:** Python 3.7+, Pandas, SQLAlchemy, openpyxl, SQLite  
-* **Logros:**
-  * Estructuración de datos en diccionarios anidados con métricas clave (tiempo total en pista, vuelta más rápida, total de vueltas).  
-  * Identificación de finalistas, ganador, podio (top 3) y autor de la vuelta más rápida.  
-  * Asignación de puntos (25‑18‑15‑…‑1) a los 10 primeros finalistas y punto extra por la vuelta más rápida.  
-  * Cálculo de ranking y estadísticas por escudería, con extracción del top 3 de equipos.  
-  * Exportación automática de resultados a JSON, Excel y base de datos SQLite.  
-
 ---  
 
 ## 🧠 **Proyectos de Machine Learning**
 
 ### 🌸 **Clasificación de Iris con Decision Tree**
-[📄 Ver documentación de Aprendizaje Supervisado](Python\Aprendizaje Supervisado\README.md)
 
 * Modelo explicativo visual para clasificar especies según características florales.
 
 ### 🔍 **Detección de Sarcasmo en Titulares**
-[📄 Ver documentación de Aprendizaje Supervisado](Python\Procesamiento Lenguaje Natural\README.md)
 
 * NLP pipeline para clasificar titulares usando Random Forest.
 
 ### 🌐 **Reducción Dimensionalidad (PCA)**
-[📄 Ver documentación de Aprendizaje Supervisado](Python\Procesamiento Lenguaje Natural\README.md)
 
 * Aplicación de PCA en dataset Iris para optimización del análisis exploratorio.
 
 ### 📷 **Clasificación de Imágenes (CIFAR-10)**
-[📄 Ver documentación de Aprendizaje Supervisado](Python\Redes Neuronales\README.md)
 
 * Comparativa entre red neuronal densa y CNN.
 * CNN alcanzó 76.6% accuracy con análisis detallado mediante matriz de confusión.
 
 ### 🤖 **Clustering: K-Means y DBSCAN**
-[📄 Ver documentación de Aprendizaje No Supervisado](Python\Aprendizaje No Supervisado\README.md)
 
 * Comparación de algoritmos, evaluación visual y numérica para segmentación óptima.
 
 ---
 
-## 💼 **Conclusión General del Portfolio**
+💼 Cierre y Próximos Pasos
 
-Este conjunto de proyectos refleja una sólida experiencia en análisis estratégico, manejo avanzado de datos y aplicación de técnicas de machine learning para optimizar la toma de decisiones empresariales.
+Este repositorio reúne proyectos que reflejan mi práctica en análisis de datos y machine learning, así como mi capacidad para aprender nuevas herramientas y metodologías. Cada caso de estudio me ha permitido enfrentar desafíos reales, mejorar mi atención al detalle y colaborar con un enfoque orientado al negocio.
+
+Estoy entusiasmado por seguir creciendo en entornos de Data Analysis o Data Engineering, contribuyendo con soluciones claras y efectivas. Agradezco tu tiempo revisando mi trabajo y quedo abierto a feedback para seguir mejorando.
