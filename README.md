@@ -1,4 +1,4 @@
-## FZ DataWorks – Repositorio de Ciencia de Datos - Facundo Zubeldia
+## Repositorio de Ciencia de Datos - Facundo Zubeldia
 
 Bienvenido a mi repositorio de ciencia de datos. Recopila proyectos aplicados en análisis de datos, visualización estratégica y machine learning. Cada uno está orientado a resolver problemas reales y facilitar la toma de decisiones empresariales. En cada carpeta encontrarás un caso práctico con su propio README explicativo.
 
