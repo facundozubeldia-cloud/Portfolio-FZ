@@ -49,7 +49,7 @@ Estas estaciones presentan las tasas de rotación más bajas del sistema, lo que
 
 ### 2. ¿Qué acción propondrías para ellas?
 
-🔧 Reducir el tamaño de las estaciones y reubicar los anclajes sobrantes hacia zonas de mayor demanda.
+Reducir el tamaño de las estaciones y reubicar los anclajes sobrantes hacia zonas de mayor demanda.
 
 ---
 
@@ -87,9 +87,9 @@ Por ejemplo:
 
 ---
 
-## 📊 Resumen del Dashboard
+## Resumen del Dashboard
 
-### 🔝 Estaciones con Mayor Rotación
+### Estaciones con Mayor Rotación
 
 | Nombre Estación         | Total Viajes | Sumatoria Anclaje | Tasa de Rotación |
 |-------------------------|--------------|-------------------|------------------|
@@ -108,7 +108,7 @@ Por ejemplo:
 | 🔴 Plaza Oeste          | 3            | 1                 | 8.6%             |
 | 🔴 Distrito Tecnológico | 8            | 3                 | 10.5%            |
 
-**🔹 Totales:** 75 viajes | 36 anclajes | Rotación promedio: 20.1%
+**Totales:** 75 viajes | 36 anclajes | Rotación promedio: 20.1%
 
 ---
 

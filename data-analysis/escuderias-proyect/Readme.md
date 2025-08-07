@@ -1,7 +1,7 @@
 ## Formula 1 - Escuderias
 
 **Descripción**  
-Este script en Python procesa los datos de una carrera de Fórmula 1 de 52 vueltas (hasta 20 pilotos), estructurando la información en un diccionario anidado, calculando posiciones y puntos, obteniendo estadísticas y generando distintos informes.
+Este proyecto realizado en Python procesa los datos de una carrera de Fórmula 1 de 52 vueltas (hasta 20 pilotos), estructurando la información en un diccionario anidado, calculando posiciones y puntos, obteniendo estadísticas y generando distintos informes.
 
 ## Funcionalidades principales
 
