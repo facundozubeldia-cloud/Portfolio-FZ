@@ -1,10 +1,10 @@
-### 📘 Análisis Estratégico de Capital Humano
+### Análisis Estratégico de Capital Humano
 
 Este análisis brinda a la dirección una visión integral del ciclo de vida del empleado, permitiendo identificar riesgos, oportunidades y tomar decisiones informadas en torno a la gestión del talento.
 
 ---
 
-### 🧱 Estructura del modelo
+### Estructura del modelo
 
 El modelo de datos está compuesto por cinco tablas principales que se relacionan entre sí:  
 
@@ -18,7 +18,7 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 
 ---
 
-### 1. 👥 Visión General de la Fuerza Laboral  
+### 1. Visión General de la Fuerza Laboral  
 ![Vista Global](VistaGlobal.png)  
 - **Headcount activo**: 1 467 empleados.  
 - **Contrataciones totales** (jul 2018–jun 2023): 3 000.  
@@ -31,7 +31,7 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 
 ---
 
-#### 2. 📈 Evaluación de Desempeño  
+#### 2. Evaluación de Desempeño  
 ![Calificación](Calificación.png)  
 - **Calificación promedio (headcount)**: 2,96/5  
 - **Por departamento**  
@@ -43,11 +43,11 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 - **Calificación por cargo** (top/bottom según headcount)  
 - **Tendencia vs. rotación**: línea histórica de calificación frente a rotación anual  
 
-🔎 **Objetivo**: detectar unidades con desempeño débil y correlacionarlo con rotación y clima.
+**Objetivo**: detectar unidades con desempeño débil y correlacionarlo con rotación y clima.
 
 ---
 
-### 3. 📚 Capacitación  
+### 3. Capacitación  
 ![Capacitación](Capacitación.png)  
 - **Participación**: 1 467 trabajadores.  
 - **Finalización**: 379 (25,8%) · **No finalizaron**: 1 088 (74,2%).  
@@ -56,7 +56,7 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 
 ---
 
-### 4. 🌟 Compromiso y Clima Laboral  
+### 4. Compromiso y Clima Laboral  
 ![Encuesta](Encuesta.png)  
 - **Compromiso promedio**: 2,9/5  
 - **Satisfacción promedio**: 3,0/5  
@@ -68,7 +68,7 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 
 ---
 
-### 5. 🔄 Retención y Rotación  
+### 5. Retención y Rotación  
 ![Rotación](Rotación.png)  
 - **Tasa de rotación**: 51,1%  
 - **Por antigüedad**:  
@@ -85,9 +85,9 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 
 ---
 
-### 🧮 Transformaciones y Limpieza en Power Query
+### Transformaciones y Limpieza en Power Query
 
-### 1. 👥 Tabla Empleados
+### 1. Tabla Empleados
 - Unificación de `Nombre` + `Apellido` → `Empleado`.  
 - Renombrado de campos (`Title` → `Puesto`, `ADEmail` → `Email`, etc.).  
 - Conversión de fechas (`StartDate`, `ExitDate`, `DOB`).  
@@ -96,37 +96,37 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 
 ---
 
-### 2. 📊 Tabla Encuesta de Compromiso
+### 2. Tabla Encuesta de Compromiso
 - `Engagement Score` → `Compromiso`.  
 - `Resultado` = promedio(`Compromiso`,`Satisfaction`,`WorkEnv`).  
 - Segmentación de `Resultado` en categorías.
 
 ---
 
-### 3. 📋 Tabla Reclutamiento
+### 3. Tabla Reclutamiento
 - Concatena nombre + apellido en `Postulante`.  
 - Renombrado y normalización de `Género`, `Email`, `Años de experiencia`.  
 - Limpieza de `Teléfono` y otros formatos.
 
 ---
 
-### 4. 🎓 Tabla Capacitación
+### 4. Tabla Capacitación
 - Renombra `Program` → `Programa`; `Status` → `Resultado`; `Duration` → `Duración`.  
 - Conversión de duración y costo a numérico.  
 - Ajuste regional de separadores decimales.
 
 ---
 
-### 📊 Resultado del Análisis de Recursos Humanos
+### Resultado del Análisis de Recursos Humanos
 
-### 🧾 Conclusión General
+### Conclusión General
 La empresa presenta una **alta fuga de talentos**, con una **tasa de rotación histórica del 51,1%** (1 de cada 2 empleados):
 
 - Erosiona la **continuidad operativa**, la **rentabilidad**, la **especialización** y la **calidad** de entregables.
 
 ---
 
-### 5 🔍 Principales causas de la alta rotación
+### 5 Principales causas de la alta rotación
 
 1. **Calificación laboral deficiente**  
    - Promedio **2,96/5**, por debajo del umbral recomendado (≥ 3).  
@@ -141,7 +141,7 @@ La empresa presenta una **alta fuga de talentos**, con una **tasa de rotación h
 
 ---
 
-### 📌 Recomendaciones sugeridas
+### Recomendaciones sugeridas
 - Revisar y modernizar contenidos y formatos de capacitación.  
 - Diseñar planes de acción para elevar compromiso y satisfacción.  
 - Mejorar iniciativas de clima laboral y reconocimiento.  
@@ -149,10 +149,10 @@ La empresa presenta una **alta fuga de talentos**, con una **tasa de rotación h
 
 ---
 
-## 🎯 Impacto en el Negocio
+## Impacto en el Negocio
 
 La combinación de alta rotación y valoración media del talento:  
-- ⏳ Compromete la continuidad de proyectos  
-- 📉 Reduce márgenes y eleva costos de reemplazo  
-- 🔄 Limita la agilidad ante cambios del mercado  
-- 🧠 Provoca pérdida de conocimiento crítico
+- Compromete la continuidad de proyectos  
+- Reduce márgenes y eleva costos de reemplazo  
+- Limita la agilidad ante cambios del mercado  
+- Provoca pérdida de conocimiento crítico

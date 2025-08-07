@@ -1,11 +1,11 @@
-# 🚲 Análisis del Sistema EcoBici
+# Análisis del Sistema EcoBici
 
 Este proyecto analiza el uso del sistema de bicicletas públicas EcoBici en Buenos Aires, explorando patrones de viaje, rotación de estaciones y comportamiento de usuarios.
 
 ---
-## 🧮 Transformaciones en Power Query
+## Transformaciones en Power Query
 
-### 🔄 Tabla: Viajes
+### Tabla: Viajes
 
 - Se cambiaron los tipos de datos para columnas clave (`ID_Viaje`, `ID_Usuario`, `Estacion_Origen`, `Estacion_Destino`, `Fecha de Inicio`, `Fecha fin`).
 - Se convirtieron los IDs y estaciones a texto para facilitar relaciones con otras tablas.
@@ -16,7 +16,7 @@ Este proyecto analiza el uso del sistema de bicicletas públicas EcoBici en Buen
 
 ---
 
-### 👥 Tabla: Usuarios
+### Tabla: Usuarios
 
 - Se promovieron encabezados desde la fuente.
 - Se ajustaron tipos de datos (`ID_Usuario`, `Tipo de Usuario`, `Año de nacimiento`).
@@ -25,7 +25,7 @@ Este proyecto analiza el uso del sistema de bicicletas públicas EcoBici en Buen
 
 ---
 
-### 📍 Tabla: Estaciones
+### Tabla: Estaciones
 
 - Se extrajo la tabla desde el archivo fuente (`Table_1`).
 - Se ajustaron tipos de datos (`ID_Estacion`, `Nombre Estacion`, `Comuna`, `Capacidad Anclajes`).
@@ -33,15 +33,15 @@ Este proyecto analiza el uso del sistema de bicicletas públicas EcoBici en Buen
 
 ---
 
-## 📋 Análisis Estratégico
+## Análisis Estratégico
 
 ![Dashboard](image.png)
 
 ### 1. ¿Cuáles son las 3 estaciones menos eficientes?
 
-- 📍 Biblioteca Nacional  
-- 📍 Plaza Oeste  
-- 📍 Distrito Tecnológico  
+- Biblioteca Nacional  
+- Plaza Oeste  
+- Distrito Tecnológico  
 
 Estas estaciones presentan las tasas de rotación más bajas del sistema, lo que indica un uso subóptimo.
 
@@ -61,7 +61,7 @@ Una baja rotación implica que las bicicletas permanecen estacionadas por largos
 
 ### 4. ¿Qué tipo de usuario realiza los viajes más largos?
 
-🧳 Los turistas, con un promedio de 56 minutos por viaje.
+Los turistas, con un promedio de 56 minutos por viaje.
 
 ---
 
@@ -73,7 +73,7 @@ Los turistas probablemente utilizan el sistema para paseos recreativos o turíst
 
 ### 6. ¿Cuáles son las 2 horas pico del sistema?
 
-⏰ 8:00 AM y 18:00 PM  
+8:00 AM y 18:00 PM  
 Coinciden con los horarios típicos de entrada y salida laboral.
 
 ---
@@ -81,7 +81,7 @@ Coinciden con los horarios típicos de entrada y salida laboral.
 ### 7. ¿Cómo podría el equipo de logística usar esta información?
 
 El equipo puede anticipar la demanda en esas franjas horarias y planificar la redistribución de bicicletas con mayor precisión.  
-📦 Por ejemplo:
+Por ejemplo:
 - Asegurar disponibilidad en estaciones clave antes de las 8:00 AM.
 - Reforzar capacidad de anclaje en zonas de retorno entre 17:30 y 18:30.
 
@@ -112,24 +112,24 @@ El equipo puede anticipar la demanda en esas franjas horarias y planificar la re
 
 ---
 
-### 📈 Métricas Generales
+### Métricas Generales
 
 - **Promedio de viaje (minutos):** `30.59`
 - **Total de viajes:** `75`
 
 ---
 
-### 📉 Promedio de viaje por tipo de usuario
+### Promedio de viaje por tipo de usuario
 
 | Tipo de Usuario | Promedio (min) |
 |-----------------|----------------|
-| 🧳 Turista       | 56             |
-| 🗓️ Anual         | 24             |
-| 🕐 Ocasional     | 22             |
+| Turista       | 56             |
+| Anual         | 24             |
+| Ocasional     | 22             |
 
 ---
 
-### ⏰ Total de viajes por hora y mes
+### Total de viajes por hora y mes
 
 | Hora | Octubre | Noviembre |
 |------|---------|-----------|
@@ -147,7 +147,7 @@ El equipo puede anticipar la demanda en esas franjas horarias y planificar la re
 
 ---
 
-## 🧠 Lecciones Aprendidas
+## Lecciones Aprendidas
 
 - La rotación de estaciones no siempre se correlaciona con la cantidad de viajes.
 - Los turistas realizan viajes más largos, pero menos frecuentes.
@@ -155,7 +155,7 @@ El equipo puede anticipar la demanda en esas franjas horarias y planificar la re
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Power BI** para visualización
 - **Excel / CSV / Power Query** para limpieza de datos

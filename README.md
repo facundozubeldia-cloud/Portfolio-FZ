@@ -1,11 +1,11 @@
 ## FZ DataWorks – Repositorio de Ciencia de Datos - Facundo Zubeldia
 
-Bienvenido a mi repositorio de ciencia de datos. Recopila proyectos aplicados en análisis de datos, visualización estratégica y machine learning, desarrollados por Facundo Zubeldia. Cada uno está orientado a resolver problemas reales y facilitar la toma de decisiones empresariales. En cada carpeta encontrarás un caso práctico con su propio README explicativo.
+Bienvenido a mi repositorio de ciencia de datos. Recopila proyectos aplicados en análisis de datos, visualización estratégica y machine learning. Cada uno está orientado a resolver problemas reales y facilitar la toma de decisiones empresariales. En cada carpeta encontrarás un caso práctico con su propio README explicativo.
 
-## 🧠 Sobre mí
+## Sobre mí
 Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formación adicional en Coderhouse y Educación IT. Me especializo principalmente en Python, SQL, Power BI y análisis exploratorio.
 
-## 🛠️ Herramientas que utilizo
+## Herramientas que utilizo
 - Python (Pandas, NumPy, Matplotlib, Seaborn, etc)
 - Power BI (DAX, JSON themes, Power Query)
 - SQL (SQLite, My SQL, SQL Server)
@@ -14,7 +14,7 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 
 ---
 
-## 🚗 **Rendimiento y Economía: Modelos Automotores**
+## **Rendimiento y Economía: Modelos Automotores**
 
 **Objetivo:** Análisis del mercado automotor para identificar patrones según perfil de cliente y gama de precios, facilitando decisiones estratégicas de negocio.
 
@@ -28,11 +28,11 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 
 ---
 
-## 🏎️ Escuderias - Análisis de Formula 1
+## Escuderias - Análisis de Formula 1
 
 Este script en Python analiza los resultados de una carrera de Fórmula 1 de 52 vueltas con hasta 20 pilotos. Estructura los datos en un diccionario anidado, calcula posiciones y puntos, genera estadísticas descriptivas y exporta informes en distintos formatos.
 
-#### ⚙️ Funcionalidades destacadas
+#### Funcionalidades destacadas
 
 - Transformación de datos en estructuras claras y jerárquicas.
 - Identificación de finalistas, ganador y podio.
@@ -41,12 +41,12 @@ Este script en Python analiza los resultados de una carrera de Fórmula 1 de 52 
 - Ranking de escuderías por puntos.
 - Exportación en JSON, Excel y SQLite.
 
-#### 🧾 Ejemplo de resultados
+#### Ejemplo de resultados
 
-- 🥇 **Ganador**: Max Verstappen – 5200 s (vuelta rápida: 85 s)  
-- 🏆 **Podio**: Verstappen, Norris, Piastri  
-- 🔥 **Top escuderías**: McLaren (33 ptos), Red Bull (27), Ferrari (20)  
-- 📊 **Estadísticas (finishers)**:  
+- **Ganador**: Max Verstappen – 5200 s (vuelta rápida: 85 s)  
+- **Podio**: Verstappen, Norris, Piastri  
+- **Top escuderías**: McLaren (33 ptos), Red Bull (27), Ferrari (20)  
+- **Estadísticas (finishers)**:  
   - Media: 5652 s  
   - Mediana: 5616 s  
   - Mínimo: 5200 s  
@@ -55,7 +55,7 @@ Este script en Python analiza los resultados de una carrera de Fórmula 1 de 52 
 
 ---
 
-## 🚲 **Análisis del Sistema EcoBici**
+## **Análisis del Sistema EcoBici**
 
 **Objetivo:** Evaluar eficiencia, patrones de uso y optimización de recursos del sistema público de bicicletas en Buenos Aires.
 
@@ -68,7 +68,7 @@ Este script en Python analiza los resultados de una carrera de Fórmula 1 de 52 
 
 ---
 
-## 📘 **Dashboard Estratégico de Capital Humano**
+## **Dashboard Estratégico de Capital Humano**
 
 **Objetivo:** Proporcionar una visión integral del ciclo de vida del empleado, identificando riesgos y oportunidades en la gestión del talento.
 
@@ -81,7 +81,7 @@ Este script en Python analiza los resultados de una carrera de Fórmula 1 de 52 
 
 ---
 
-## 📊 **Análisis de Ventas - Retail**
+## **Análisis de Ventas - Retail**
 
 **Objetivo:** Evaluar desempeño de ventas mediante KPIs clave, segmentación regional y análisis temporal.
 
@@ -94,32 +94,32 @@ Este script en Python analiza los resultados de una carrera de Fórmula 1 de 52 
 
 ---  
 
-## 🧠 **Proyectos de Machine Learning**
+## **Proyectos de Machine Learning**
 
-### 🌸 **Clasificación de Iris con Decision Tree**
+### **Clasificación de Iris con Decision Tree**
 
 * Modelo explicativo visual para clasificar especies según características florales.
 
-### 🔍 **Detección de Sarcasmo en Titulares**
+### **Detección de Sarcasmo en Titulares**
 
 * NLP pipeline para clasificar titulares usando Random Forest.
 
-### 🌐 **Reducción Dimensionalidad (PCA)**
+### **Reducción Dimensionalidad (PCA)**
 
 * Aplicación de PCA en dataset Iris para optimización del análisis exploratorio.
 
-### 📷 **Clasificación de Imágenes (CIFAR-10)**
+### **Clasificación de Imágenes (CIFAR-10)**
 
 * Comparativa entre red neuronal densa y CNN.
 * CNN alcanzó 76.6% accuracy con análisis detallado mediante matriz de confusión.
 
-### 🤖 **Clustering: K-Means y DBSCAN**
+### **Clustering: K-Means y DBSCAN**
 
 * Comparación de algoritmos, evaluación visual y numérica para segmentación óptima.
 
 ---
 
-💼 Cierre y Próximos Pasos
+Cierre y Próximos Pasos
 
 Este repositorio reúne proyectos que reflejan mi práctica en análisis de datos y machine learning, así como mi capacidad para aprender nuevas herramientas y metodologías. Cada caso de estudio me ha permitido enfrentar desafíos reales, mejorar mi atención al detalle y colaborar con un enfoque orientado al negocio.
 

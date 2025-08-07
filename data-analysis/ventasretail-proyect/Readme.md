@@ -1,7 +1,7 @@
 # Proyecto BI: Análisis de Ventas Automotores – ClassicModels Ltda.
 
 ## 1. Contexto y Alcance  
-ClassicModels Ltda. desea instaurar una cultura de datos para tomar decisiones objetivas y mejorar la atención al cliente. Para ello, se ha contratado el desarrollo de un informe de Business Intelligence en Power BI que responda a las siguientes preguntas de negocio:
+Caso ficticio: ClassicModels Ltda. desea instaurar una cultura de datos para tomar decisiones objetivas y mejorar la atención al cliente. Para ello, se ha contratado el desarrollo de un informe de Business Intelligence en Power BI que responda a las siguientes preguntas de negocio:
 
 1. ¿Cuántas transacciones válidas se han realizado de forma histórica?  
 2. ¿Cuál es el monto total de las ventas históricas?  
@@ -51,7 +51,7 @@ En este repositorio encontrarás:
 - La región norte mostró mayor rentabilidad por unidad vendida.
 - El 80% de las ventas provienen del 20% de los productos (ley de Pareto).
 
-## 📁 Archivos
+## Archivos
 
 - `ventas.pbix`: archivo de Power BI.
 - `datos/`: carpeta con los CSV originales.

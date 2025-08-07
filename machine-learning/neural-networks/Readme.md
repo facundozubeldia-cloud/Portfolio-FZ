@@ -1,12 +1,12 @@
-## 🧮 Transformaciones y Lógica del Proyecto
+## Transformaciones y Lógica del Proyecto
 
-### 🖼️ Proyecto: Clasificación de Imágenes con CIFAR-10
+### Proyecto: Clasificación de Imágenes con CIFAR-10
 
 Este notebook implementa un pipeline completo para la clasificación de imágenes utilizando el conjunto de datos **CIFAR-10** (60 000 imágenes de 32x32 píxeles, distribuidas en 10 clases). Se comparan dos enfoques: una red neuronal densa y una red convolucional (CNN).
 
 ---
 
-### 📦 Carga y visualización de datos
+### Carga y visualización de datos
 
 - Se importó el dataset `CIFAR-10` desde `Keras.datasets`.
 - Se dividió el conjunto en **entrenamiento** y **testeo**.
@@ -14,16 +14,16 @@ Este notebook implementa un pipeline completo para la clasificación de imágene
 
 ---
 
-### 🧹 Preprocesamiento
+### Preprocesamiento
 
 - Se normalizaron los valores de píxeles al rango `[0,1]`.
 - Las etiquetas fueron transformadas a formato **one-hot encoding** con `to_categorical`.
 
 ---
 
-### 🔣 Modelo Denso (Fully Connected)
+### Modelo Denso (Fully Connected)
 
-#### 🔧 Arquitectura
+#### Arquitectura
 
 ```python
 Input(shape=(32,32,3)) → Flatten()
@@ -31,16 +31,16 @@ Input(shape=(32,32,3)) → Flatten()
 → Dense(64, activation='relu')
 → Dense(10, activation='softmax')
 
-## 📊 Comparación de Modelos sobre CIFAR-10
+## Comparación de Modelos sobre CIFAR-10
 
-### 🧪 Resultados del Modelo Denso
+### Resultados del Modelo Denso
 
 **Accuracy final:** `49.0 %`  
 **Loss final:** `1.4302`  
 **Accuracy de validación:** `47.0 %`  
 **Loss de validación:** `1.4814`
 
-📉 Evolución por época:
+Evolución por época:
 
 | Época | Accuracy | Loss   | Val_Accuracy | Val_Loss |
 |-------|----------|--------|--------------|----------|
@@ -55,16 +55,14 @@ Input(shape=(32,32,3)) → Flatten()
 | 9     | 48.4%    | 1.4491 | 46.4%        | 1.5067   |
 | 10    | 49.0%    | 1.4302 | 47.0%        | 1.4814   |
 
----
-
-### 🧠 Resultados del Modelo CNN
+### Resultados del Modelo CNN
 
 **Accuracy final:** `76.6 %`  
 **Loss final:** `0.6780`  
 **Accuracy de validación:** `69.1 %`  
 **Loss de validación:** `0.9159`
 
-📉 Evolución por época:
+Evolución por época:
 
 | Época | Accuracy | Loss   | Val_Accuracy | Val_Loss |
 |-------|----------|--------|--------------|----------|
@@ -79,58 +77,54 @@ Input(shape=(32,32,3)) → Flatten()
 | 9     | 75.0%    | 0.7286 | 68.6%        | 0.9191   |
 | 10    | 76.6%    | 0.6780 | 69.1%        | 0.9159   |
 
----
-
-### 🔍 Comparativa
+### Comparativa
 
 | Métrica           | Modelo Denso | CNN        |
 |-------------------|--------------|------------|
 | Accuracy Final    | 49.0%        | 76.6%      |
 | Validación Final  | 47.0%        | 69.1%      |
 | Mejora Relativa   | —            | +27.6%     |
-| Interpretación    | 🌿 Básico     | 🚀 Optimizado para imágenes |
+|                   |              | Optimizado |
+|  Interpretación   |   Básico     |     para   |
+|                   |              |   imágenes |
 
----
-
-### 🎯 Visualización (Confusion Matrix)
+### Visualización (Confusion Matrix)
 
 El modelo CNN muestra mayor precisión en clases complejas como **perro**, **gato** y **camión**, según la matriz de confusión visualizada. Las categorías menos diferenciadas en el modelo denso tienen errores más dispersos fuera de la diagonal.
 
----
+## Evaluación Final – Modelo CNN (CIFAR-10)
 
-## 📊 Evaluación Final – Modelo CNN (CIFAR-10)
-
-### 🧮 Matriz de Confusión
+### Matriz de Confusión
 
 Este gráfico resume cómo se desempeñó el modelo CNN sobre el conjunto de test. Cada fila representa la categoría real, y cada columna la predicción del modelo.
 
-| Índice | Etiqueta         |
-|--------|------------------|
-| 0      | ✈️ Avión          |
-| 1      | 🚗 Automóvil      |
-| 2      | 🐦 Pájaro         |
-| 3      | 😺 Gato           |
-| 4      | 🦌 Ciervo         |
-| 5      | 🐶 Perro          |
-| 6      | 🐸 Rana           |
-| 7      | 🐴 Caballo        |
-| 8      | 🚢 Barco          |
-| 9      | 🚚 Camión         |
+| Índice | Etiqueta           |
+|--------|--------------------|
+| 0      |     Avión          |
+| 1      |     Automóvil      |
+| 2      |     Pájaro         |
+| 3      |     Gato           |
+| 4      |     Ciervo         |
+| 5      |     Perro          |
+| 6      |     Rana           |
+| 7      |     Caballo        |
+| 8      |     Barco          |
+| 9      |     Camión         |
 
-### ✅ Rendimiento destacado
+### Rendimiento destacado
 
 - **Automóvil (Clase 1):** 869 clasificaciones correctas
 - **Rana (Clase 6):** 780 clasificaciones correctas
 - **Barco (Clase 8):** 783 clasificaciones correctas
 - **Camión (Clase 9):** 725 clasificaciones correctas
 
-### ⚠️ Áreas de mejora
+### Áreas de mejora
 
 - Alta confusión entre animales: Gato, Perro, Ciervo y Caballo.
 - El modelo confundió al Gato con Perro en 177 ocasiones y con Ciervo en 61.
 - Algunas imágenes de Avión se confundieron con Barco y Automóvil, probablemente por fondo visual similar.
 
-### 📌 ¿Por qué importa?
+### ¿Por qué importa?
 
 La matriz ayuda a:
 - Identificar clases que necesitan mejor definición o más datos.

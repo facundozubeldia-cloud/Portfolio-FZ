@@ -1,13 +1,13 @@
 # Rendimiento y Economía: Estudio de Modelos Automotores
 
-## 📂 Estructura del Repositorio
+## Estructura del Repositorio
 
 [Dataset original en Excel](./Cars.xlsx) 
 [Archivo Power BI](./Cars.pbix)
 
 ---
 
-## 🎯 Definición del enfoque
+## Definición del enfoque
 
 Este proyecto analiza un conjunto de datos del mercado automotor para identificar patrones entre compañías, modelos y perfiles de clientes.  
 El objetivo es ayudar a una nueva empresa que busca ingresar al mercado como revendedora a detectar qué marcas y modelos se ajustan mejor a cada tipo de usuario.  
@@ -15,30 +15,22 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ---
 
-## ⚙️ Características a implementar
+## Características a implementar
 
-### 👥 Perfiles de Usuario  
+### Perfiles de Usuario  
 - Familiar  
 - Soltero  
 - Eco Friendly  
 - Corredores  
 - Compradores de lujo
 
-### 💰 Gamas de modelos  
+### Gamas de modelos  
 - **Económico** (USD 4 000 – 25 000)  
 - **Accesible** (USD 25 390 – 45 000)  
 - **Estándar** (USD 45 500 – 80 000)  
 - **Premium** (USD 81 000 – 150 000)  
 - **Lujo** (USD 150 900 – 294 000)  
 - **Superlujo** (USD 308 000 – 18 000 000)
-
----
-
-## 📅 Cronograma
-
-> *Gantt de actividades y entregables*  
-
-![Cronograma](./Gantt.jpg) 
 
 ---
 
@@ -52,7 +44,7 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 - **Objetivo:** Analizar patrones de popularidad y precio, y facilitar la elección según perfil de usuario.
 ---
 
-## 🧹 Proceso de recopilación y limpieza de datos
+## Proceso de recopilación y limpieza de datos
 
 1. **Recopilación**  
    - Dataset original: 1 tabla con 11 columnas → normalizado en 5 tablas.  
@@ -69,15 +61,15 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ---
 
-## 🗺️ Diagrama del modelo de datos
+## Diagrama del modelo de datos
 
 ![Diagrama](./Diagrama.jpg)
 
 ---
 
-## 🧮 Transformaciones en Power Query
+## Transformaciones en Power Query
 
-### 🚗 Tabla: Autos
+### Tabla: Autos
 
 - Se importó la hoja "Autos" desde un archivo Excel.
 - Se promovieron encabezados y se ajustaron tipos de datos (`CarID`, `Company_ID`, `EngineID`, `FuelTypeID`, etc.).
@@ -90,7 +82,7 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ---
 
-### ⛽ Tabla: FuelTypes
+### Tabla: FuelTypes
 
 - Se importó la hoja "FuelTypes" desde Excel.
 - Se promovieron encabezados y se ajustaron tipos de datos.
@@ -102,7 +94,7 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ---
 
-### 🛠️ Tabla: Engines
+### Tabla: Engines
 
 - Se importó la hoja "Engines" desde Excel.
 - Se promovieron encabezados y se ajustaron tipos de datos.
@@ -110,7 +102,7 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ---
 
-### 🏢 Tabla: Companies
+### Tabla: Companies
 
 - Se importó la hoja "Companies" desde Excel.
 - Se promovieron encabezados y se ajustaron tipos de datos.
@@ -118,7 +110,7 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ---
 
-### 🌍 Tabla: País
+### Tabla: País
 
 - Se reemplazaron valores en la columna `"Origen Geográfico"` para estandarizar:
   - `"Asis"` → `"Asiáticos"`
@@ -130,23 +122,21 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ---
 
-### 👥 Tabla: Clientes (segmentación por perfil)
+### Tabla: Clientes (segmentación por perfil)
 
 Se creó una tabla personalizada que clasifica a los usuarios según el tipo de auto que eligen:
 
 | Usuario               | Criterios de Segmentación                                                                 |
 |-----------------------|-------------------------------------------------------------------------------------------|
-| 🟢 EcoFriendly         | Autos con `FuelType_ID = 3` (Ecológicos)                                                 |
-| 🏁 Corredor            | `HorsePower ≥ 200` y `Aceleración 0-100 ≤ 5 seg`                                         |
-| 👨‍👩‍👧 Familiar          | `Asientos ≥ 5`, `Puertas ≥ 4`, `Precio ≤ 70,000 USD`                                     |
-| 🧍 Soltero             | `HorsePower ≥ 80`, `Puertas ≤ 3`, `Precio ≤ 149,999 USD`                                 |
-| 💎 Compradores de Lujo | `Clasificación de Precio = Lujo` o `Superlujo`                                           |
+| EcoFriendly         | Autos con `FuelType_ID = 3` (Ecológicos)                                                 |
+| Corredor            | `HorsePower ≥ 200` y `Aceleración 0-100 ≤ 5 seg`                                         |
+| Familiar          | `Asientos ≥ 5`, `Puertas ≥ 4`, `Precio ≤ 70,000 USD`                                     |
+| Soltero             | `HorsePower ≥ 80`, `Puertas ≤ 3`, `Precio ≤ 149,999 USD`                                 |
+| Compradores de Lujo | `Clasificación de Precio = Lujo` o `Superlujo`                                           |
 
 ---
 
-
-
-## 📊 Análisis por tipo de cliente
+## Análisis por tipo de cliente
 
 ![Dashboard](image.png)
 
@@ -172,7 +162,7 @@ Se creó una tabla personalizada que clasifica a los usuarios según el tipo de 
 
 ---
 
-## 🌐 Mercado global por perfil
+## Mercado global por perfil
 
 ### ¿A qué perfil está orientado el mercado automotor mundial?  
 - Familias: mayor volumen → versatilidad y costo medio  
@@ -182,7 +172,7 @@ Se creó una tabla personalizada que clasifica a los usuarios según el tipo de 
 
 ---
 
-## 💼 Análisis por precio y compañía
+## Análisis por precio y compañía
 
 ![Dashboard 2](image-1.png)
 
@@ -201,7 +191,7 @@ Se creó una tabla personalizada que clasifica a los usuarios según el tipo de 
 
 ---
 
-## 💸 Distribución por categoría de precio y origen
+## Distribución por categoría de precio y origen
 
 ![Dashboard 3](image-2.png)
 
@@ -218,7 +208,7 @@ Se creó una tabla personalizada que clasifica a los usuarios según el tipo de 
 
 ---
 
-## ⚡ Análisis de rendimiento
+## Análisis de rendimiento
 
 ![Dashboard 4](image-3.png)
 
@@ -237,7 +227,7 @@ Se creó una tabla personalizada que clasifica a los usuarios según el tipo de 
 
 ---
 
-## 🏁 Conclusión General
+## Conclusión General
 
 El oferta mercado automotor global está segmentado por perfil de consumidor, con **familias** dominando volumen y optando por vehículos **asiáticos** accesibles.  
 Los segmentos de **lujo** y **corredores** aportan mayor valor económico, apostando por **marcas europeas** de alta gama.  

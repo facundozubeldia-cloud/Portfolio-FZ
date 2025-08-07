@@ -42,26 +42,26 @@ Este script en Python procesa los datos de una carrera de Fórmula 1 de 52 vuelt
 
 # Resultados:
 
-📋 Lista de pilotos: ['Alexander Albon', 'Carlos Sainz', …, 'Yuki Tsunoda']
-⏱️ Lista de tiempos: [[1417,13,86], …, [5824,52,92]]
-📑 Lista de aux: ('tiempo total en pista', 'total de vueltas', 'vuelta mas rapida')
+Lista de pilotos: ['Alexander Albon', 'Carlos Sainz', …, 'Yuki Tsunoda']
+Lista de tiempos: [[1417,13,86], …, [5824,52,92]]
+Lista de aux: ('tiempo total en pista', 'total de vueltas', 'vuelta mas rapida')
 
 … (detalle por piloto) …
 
 Finishers: ['Charles Leclerc', 'Isack Hadjar', …, 'Yuki Tsunoda']
 Abandonos: ['Alexander Albon', 'Carlos Sainz', …, 'Lance Stroll']
 
-🥇 Ganador: Max Verstappen  
-    🔁 Vueltas: 52  
-    ⚡ V. rápida: 85 s  
-    ⏱️ Tiempo total: 5200 s
+Ganador: Max Verstappen  
+    Vueltas: 52  
+    V. rápida: 85 s  
+    Tiempo total: 5200 s
 
-🏆 PÓDIUM FÓRMULA 1 2025 🏆  
+PÓDIUM FÓRMULA 1 2025
 1. Max Verstappen   – 5200 s (vuelta rápida 85 s)  
 2. Lando Norris    – 5304 s (vuelta rápida 90 s)  
 3. Oscar Piastri   – 5356 s (vuelta rápida 87 s)
 
-📊 Estadísticas (finishers):  
+Estadísticas (finishers):  
   • Count : 13  
   • Mean  : 5652.00 s  
   • Median: 5616.00 s  
@@ -69,7 +69,7 @@ Abandonos: ['Alexander Albon', 'Carlos Sainz', …, 'Lance Stroll']
   • Max   : 6084 s  
   • Std   : 280.68 s  
 
-🔥 TOP 3 ESCUDERÍAS 🔥  
+TOP 3 ESCUDERÍAS
 1. McLaren  – 33 ptos  
 2. Red Bull – 27 ptos  
 3. Ferrari  – 20 ptos
