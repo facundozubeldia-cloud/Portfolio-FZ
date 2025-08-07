@@ -34,7 +34,7 @@ Para ello, se realizó un proceso de limpieza, análisis y visualización de dat
 
 ---
 
-## 🗂 Descripción del Dataset
+## Descripción del Dataset
 
 - **Fuente de datos:** Kaggle y Wikipedia  
 - **Contenido:**  
@@ -128,11 +128,10 @@ Se creó una tabla personalizada que clasifica a los usuarios según el tipo de 
 
 | Usuario               | Criterios de Segmentación                                                                 |
 |-----------------------|-------------------------------------------------------------------------------------------|
-| EcoFriendly         | Autos con `FuelType_ID = 3` (Ecológicos)                                                 |
-| Corredor            | `HorsePower ≥ 200` y `Aceleración 0-100 ≤ 5 seg`                                         |
-| Familiar          | `Asientos ≥ 5`, `Puertas ≥ 4`, `Precio ≤ 70,000 USD`                                     |
-| Soltero             | `HorsePower ≥ 80`, `Puertas ≤ 3`, `Precio ≤ 149,999 USD`                                 |
-| Compradores de Lujo | `Clasificación de Precio = Lujo` o `Superlujo`                                           |
+| EcoFriendly           | Autos con `FuelType_ID = 3` (Ecológicos)                                                  |
+| Corredor              | `HorsePower ≥ 200` y `Aceleración 0-100 ≤ 5 seg`                                          |
+| Familiar              | `Asientos ≥ 5`, `Puertas ≥ 4`, `Precio ≤ 70,000 USD`                                      |
+| Compradores de Lujo   | `Clasificación de Precio = Lujo` o `Superlujo`                                            |
 
 ---
 
@@ -157,8 +156,8 @@ Se creó una tabla personalizada que clasifica a los usuarios según el tipo de 
 - Lujo y corredores → Europa  
 - Solteros → mezcla equilibrada  
 - Implicación:  
-  - Asiáticos: seguridad, accesibilidad  
-  - Europeos: aspiracionales y performance.
+- Asiáticos: seguridad, accesibilidad  
+- Europeos: aspiracionales y performance.
 
 ---
 
@@ -185,7 +184,7 @@ Se creó una tabla personalizada que clasifica a los usuarios según el tipo de 
 - Estrategia: rotación con Nissan + VW/Mazda + selecto de Porsche.
 
 ### 2. ¿Cuál es el modelo más económico y el más caro?  
-- **Más económico:** Tata Nano GenX (Tata Motors)  
+- **Más económico:** Tata Nano GenX (Tata Motors) - USD 4 000
 - **Más caro:** La Voiture Noire (Bugatti) – USD 18 000 000  
 - Outliers notables: segundo más caro ~USD 9 000 000.
 

@@ -1,6 +1,6 @@
 ### Análisis Estratégico de Capital Humano
 
-Este análisis brinda a la dirección una visión integral del ciclo de vida del empleado, permitiendo identificar riesgos, oportunidades y tomar decisiones informadas en torno a la gestión del talento.
+Este análisis sobre datos sintéticos brinda a la dirección de esta empresa una visión integral del ciclo de vida del empleado, permitiendo identificar riesgos, oportunidades y tomar decisiones informadas en torno a la gestión del talento.
 
 ---
 
@@ -31,7 +31,7 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 
 ---
 
-#### 2. Evaluación de Desempeño  
+#### 2. Evaluación de Desempeño
 ![Calificación](Calificación.png)  
 - **Calificación promedio (headcount)**: 2,96/5  
 - **Por departamento**  
@@ -47,7 +47,7 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 
 ---
 
-### 3. Capacitación  
+### 3. Capacitación
 ![Capacitación](Capacitación.png)  
 - **Participación**: 1 467 trabajadores.  
 - **Finalización**: 379 (25,8%) · **No finalizaron**: 1 088 (74,2%).  
@@ -56,7 +56,7 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 
 ---
 
-### 4. Compromiso y Clima Laboral  
+### 4. Compromiso y Clima Laboral
 ![Encuesta](Encuesta.png)  
 - **Compromiso promedio**: 2,9/5  
 - **Satisfacción promedio**: 3,0/5  
@@ -68,7 +68,7 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 
 ---
 
-### 5. Retención y Rotación  
+### 5. Retención y Rotación
 ![Rotación](Rotación.png)  
 - **Tasa de rotación**: 51,1%  
 - **Por antigüedad**:  

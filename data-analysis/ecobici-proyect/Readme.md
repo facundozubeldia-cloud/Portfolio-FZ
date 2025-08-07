@@ -114,7 +114,7 @@ Por ejemplo:
 
 ### Métricas Generales
 
-- **Promedio de viaje (minutos):** `30.59`
+- **Promedio de duración de viajes en minutos:** `30.59`
 - **Total de viajes:** `75`
 
 ---
