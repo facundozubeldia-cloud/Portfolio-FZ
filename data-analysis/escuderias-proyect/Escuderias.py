@@ -314,6 +314,17 @@ except ImportError:
     pip.main(['install', 'sqlalchemy'])
     from sqlalchemy import create_engine
 
+# Exportar la vuelta mas rapida en formato Excel (XLSX)
+df_rapidas = pd.DataFrame(
+    [
+        {"Piloto": piloto, "Vuelta Más Rápida (s)": datos["vuelta mas rapida"]}
+        for piloto, datos in dic_general.items()
+    ]
+)
+output_dir = r"C:\Github\fz-dataworks\data-analysis\escuderias-proyect"
+excel_rapidas = os.path.join(output_dir, "vueltas_rapidas_por_piloto.xlsx")
+df_rapidas.to_excel(excel_rapidas, index=False)
+print(f"✅ Exportado Excel de vueltas más rápidas en: {excel_rapidas}")
 
 # Guardar JSON
 json_path = os.path.join('C:/GitHub/fz-dataworks/data-analysis/escuderias-proyect', 'podio_escuderias.json')

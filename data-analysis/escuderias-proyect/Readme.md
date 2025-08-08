@@ -1,7 +1,7 @@
 ## Formula 1 - Escuderias
 
 **Descripción**  
-Este proyecto realizado en Python procesa los datos de una carrera de Fórmula 1 de 52 vueltas (hasta 20 pilotos), estructurando la información en un diccionario anidado, calculando posiciones y puntos, obteniendo estadísticas y generando distintos informes.
+Este proyecto realizado en Python procesa los datos de una carrera de Fórmula 1 de 52 vueltas (hasta 20 pilotos), estructurando la información en un diccionario anidado, calculando posiciones y puntos, obteniendo estadísticas y generando informes exportados a distintos formatos, los cuales servirán para generación de gráficos.
 
 ## Funcionalidades principales
 
@@ -37,9 +37,14 @@ Este proyecto realizado en Python procesa los datos de una carrera de Fórmula 1
 
 - **Exportación de resultados**  
   - JSON (`podio_escuderias.json`)  
-  - Excel (`podio_escuderias.xlsx`)  
+  - Excel (`podio_escuderias.xlsx`)
+  - Excel (`vueltas_rapidas_por_piloto.xlsx`)
   - SQLite (`podio_escuderias.db`)
 
+- **Exportación de Gráficos**  
+  - Png (`puntos_por_escuderia_ordenado.png`)  
+  - Png (`vuelva_mas_rapida_por_piloto.png`)
+  
 # Resultados:
 
 Lista de pilotos: ['Alexander Albon', 'Carlos Sainz', …, 'Yuki Tsunoda']
@@ -57,19 +62,28 @@ Ganador: Max Verstappen
     Tiempo total: 5200 s
 
 PÓDIUM FÓRMULA 1 2025
-1. Max Verstappen   – 5200 s (vuelta rápida 85 s)  
-2. Lando Norris    – 5304 s (vuelta rápida 90 s)  
-3. Oscar Piastri   – 5356 s (vuelta rápida 87 s)
+1. Max Verstappen  – 5200 segundos (vuelta rápida 85 s)  
+2. Lando Norris    – 5304 segundos (vuelta rápida 90 s)  
+3. Oscar Piastri   – 5356 segundos (vuelta rápida 87 s)
+
+Vueltas más rapidas:
+1. Esteban Ocon    – 79 segundos
+2. Charles Lecrerc – 81 segundos
+3. Max Verstappen  – 85 segundos
+
+![Vuelvas más rapidas](vuelta_mas_rapida_por_piloto.png)
 
 Estadísticas (finishers):  
   • Count : 13  
-  • Mean  : 5652.00 s  
-  • Median: 5616.00 s  
-  • Min   : 5200 s  
-  • Max   : 6084 s  
-  • Std   : 280.68 s  
+  • Mean  : 5652 segundos
+  • Median: 5616 segundos
+  • Min   : 5200 segundos
+  • Max   : 6084 segundos
+  • Std   : 280.68 segundos
 
 TOP 3 ESCUDERÍAS
 1. McLaren  – 33 ptos  
 2. Red Bull – 27 ptos  
 3. Ferrari  – 20 ptos
+
+![TOP ESCUDERÍAS](puntos_por_escuderia_ordenado.png)
