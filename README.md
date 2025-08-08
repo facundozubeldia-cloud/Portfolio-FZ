@@ -30,7 +30,7 @@ Soy estudiante de la Tecnicatura en Ciencia de Datos e IA en ISTEA, con formaci�
 
 ## Escuderias - Análisis de Formula 1
 
-Este script en Python analiza los resultados de una carrera de Fórmula 1 de 52 vueltas con hasta 20 pilotos. Estructura los datos en un diccionario anidado, calcula posiciones y puntos, genera estadísticas descriptivas y exporta informes en distintos formatos.
+Este análisis en Python analiza los resultados de una carrera de Fórmula 1 de 52 vueltas con hasta 20 pilotos. Estructura los datos en un diccionario anidado, calcula posiciones y puntos, genera estadísticas descriptivas y exporta informes en distintos formatos, realizando gráficos luego.
 
 #### Funcionalidades destacadas
 
@@ -40,18 +40,20 @@ Este script en Python analiza los resultados de una carrera de Fórmula 1 de 52 
 - Estadísticas de tiempos (media, mediana, desviación, etc.).
 - Ranking de escuderías por puntos.
 - Exportación en JSON, Excel y SQLite.
+- Gráficos de vueltas mas rapidas y top escuderias.
 
 #### Ejemplo de resultados
 
-- **Ganador**: Max Verstappen – 5200 s (vuelta rápida: 85 s)  
+- **Ganador**: Max Verstappen – 5200 segundos (vuelta rápida: 85 segundos)  
 - **Podio**: Verstappen, Norris, Piastri  
 - **Top escuderías**: McLaren (33 ptos), Red Bull (27), Ferrari (20)  
 - **Estadísticas (finishers)**:  
-  - Media: 5652 s  
-  - Mediana: 5616 s  
-  - Mínimo: 5200 s  
-  - Máximo: 6084 s  
-  - Desviación estándar: 280.68 s
+  - Media: 5652 segundos
+  - Mediana: 5616 segundos
+  - Mínimo: 5200 segundos
+  - Máximo: 6084 segundos
+  - Desviación estándar: 280.68 segundos
+  - Gráficos de barras de top escuderias y vueltas mas rapidas.
 
 ---
 
