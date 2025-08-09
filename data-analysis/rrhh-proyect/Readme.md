@@ -48,7 +48,7 @@ El modelo de datos está compuesto por cinco tablas principales que se relaciona
 ---
 
 ### 3. Capacitación
-![Capacitación](capacitación.png)  
+![Capacitación](capacitacion.png)  
 - **Participación**: 1 467 trabajadores.  
 - **Finalización**: 379 (25,8%) · **No finalizaron**: 1 088 (74,2%).  
 - **Inversión total**: \$ 1 675 886 · **Costo fallido**: \$ 1 260 110 (75,2%).  
